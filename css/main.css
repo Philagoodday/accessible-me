@@ -1,6 +1,6 @@
 body {
   font-family: 'Roboto', Helvetica, sans-serif;
-  background-color: grey;
+  background-color: rgb(158, 189, 226);
   margin: 0;
   padding: 0;
 }
@@ -20,8 +20,14 @@ h6 {
   padding: 0 1rem;
 }
 
+nav{
+  background-color: rgb(229, 230, 224);
+}
+
 img {
-  width: 100%;
+  width: 50%;
+  margin-left: auto;
+  border: 1px solid black;
 }
 
 .main-nav ul {
@@ -42,6 +48,13 @@ img {
   color: inherit;
   text-decoration: none;
   font-size: 1.25rem;
+}
+
+.main-nav ul li a:hover{
+  background-color: #222;
+  text-decoration: underline;
+  color: ;
+
 }
 
 form input,
@@ -69,3 +82,4 @@ form button {
 .site-footer {
   padding: 2rem 0;
 }
+

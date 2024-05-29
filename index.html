@@ -13,40 +13,50 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="site-header">
+  <div class="container" id="top">
+    <header class="site-header" id="home" role="banner">
       <h1>Jam Box Studios</h1>
-      <div class="main-nav">
+      <nav class="main-nav" role="navigation">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Reservation</a></li>
-          <li><a href="#">Studio</a></li>
+          <li itemscope itemtype="https://schema.org/SiteNavigationElement">
+            <a itemprop="url" href="#home">Home</a>
+          </li>
+          <li itemscope itemtype="https://schema.org/SiteNavigationElement">
+            <a itemprop="url" href="#products">Products</a>
+          </li>
+          <li itemscope itemtype="https://schema.org/SiteNavigationElement">
+            <a itemprop="url" href="#reserv">Reservation</a>
+          </li>
+          <li itemscope itemtype="https://schema.org/SiteNavigationElement">
+            <a itemprop="url" href="#studio">Studio</a>
+          </li>
         </ul>
+      </nav>
+      <img itemscope itemtype="https://schema.org/image" src="https://placekitten.com/1200/900" alt="unloadedphoto" itemprop="image" class="banner">
+    </header>
+    <main itemscope itemtype="https://schema.org/Article" class="main-content" id="home">
+      <div role="main">
+        <h1 itemprop="headline">Welcome to Jam Box</h1>
+        <p itemprop="articlebody">Lorem ispsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
+        <p itemprop="articlebody">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
+        <div class="owner" id="Products">
+          <h2 >Meet the owner</h2>
+          <ul itemprop="sponser" itemscope itemtype="https://schema.org/Person" >
+            <li>Name: John Doe</li>
+            <li>Title: CEO</li>
+            <li>Email: johnjoe@jambox.ca</li>
+            <li>Phone: 613-000-0000</li>
+          </ul>
+          <h1 id="studio">Address</h1>
+          <p>
+            Jambox Studios
+            123 Guitar Road,
+            Musicville, Danceistan
+            B3T 0L0
+          </p>
+        </div>
       </div>
-      <img src="https://placekitten.com/1200/900" class="banner">
-    </div>
-    <div class="main-content">
-      <h1>Welcome to Jam Box</h1>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
-      <div class="owner">
-        <h1>Meet the owner</h1>
-        <ul>
-          <li>Name: John Doe</li>
-          <li>Title: CEO</li>
-          <li>Email: johnjoe@jambox.ca</li>
-          <li>Phone: 613-000-0000</li>
-        </ul>
-        <h1>Address</h1>
-        <p>
-          Jambox Studios
-          123 Guitar Road,
-          Musicville, Danceistan
-          B3T 0L0
-        </p>
-      </div>
-      <div class="contact-section">
+      <section class="contact-section" id="reserv" role="form">
         <h1>Contact Us</h1>
         <form action="thanks.html">
           <label>Full Name</label>
@@ -57,11 +67,11 @@
           <textarea></textarea>
           <button type="submit">Send</button>
         </form>
-      </div>
-    </div>
-    <div class="site-footer">
-      &copy; 2021 Jam Box Studios
-    </div>
+      </section>
+    </main>
+    <footer class="site-footer" role="contentinfo">
+      &copy; 2021 Jam Box Studios <a href="#top">Back to Top</a>
+    </footer>
   </div>
 </body>
 
