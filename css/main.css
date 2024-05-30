@@ -22,6 +22,7 @@ h6 {
 
 nav{
   background-color: rgb(229, 230, 224);
+  width: 100%;
 }
 
 img {
@@ -53,14 +54,18 @@ img {
 .main-nav ul li a:hover{
   background-color: #222;
   text-decoration: underline;
-  color: ;
+  color:whitesmoke ;
+}
 
+main{
+  background-color: azure;
+  padding: 10px;
 }
 
 form input,
 form textarea {
   display: block;
-  width: 100%;
+  width: 90%;
   margin-bottom: 1rem;
   padding: .5rem 1rem;
 }
@@ -77,6 +82,11 @@ form button {
   border: 2px solid black;
   padding: 1rem;
   text-transform: uppercase;
+}
+
+form button:hover{
+  background-color: #222;
+  color:aliceblue;
 }
 
 .site-footer {
